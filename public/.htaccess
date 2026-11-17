@@ -1,0 +1,17 @@
+Options -Indexes
+DirectoryIndex index.php
+RewriteEngine On
+
+# Never serve private project files from the public web root.
+<FilesMatch "^(\.env|composer\.(json|lock)|README\.md|database\.sql)$">
+  Require all denied
+</FilesMatch>
+
+# Machine-readable discovery files.
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+RewriteRule ^robots\.txt$ robots.php [L]
+
+# Route non-file requests through the front controller.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]

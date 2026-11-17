@@ -1,0 +1,1 @@
+<section class="error-page"><div><span class="eyebrow">404 / PAGE NOT FOUND</span><h1>This page seems<br><em>to have moved.</em></h1><p>The page you're looking for may no longer be available or the address may be incorrect.</p><a class="button button-primary" href="<?= e(url('/')) ?>">Return to Home <span>↗</span></a></div><div class="error-number">404</div></section>

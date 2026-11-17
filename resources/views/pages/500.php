@@ -1,0 +1,1 @@
+<section class="error-page"><div><span class="eyebrow">TEMPORARY ISSUE</span><h1>We'll be back<br><em>in a moment.</em></h1><p>Something unexpected happened while loading this page. Please try again shortly.</p><a class="button button-primary" href="<?= e(url('/')) ?>">Return to Home <span>↗</span></a></div><div class="error-number">!</div></section>

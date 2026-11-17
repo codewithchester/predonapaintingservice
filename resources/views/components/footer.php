@@ -1,0 +1,9 @@
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div class="footer-brand"><a href="<?= e(url('/')) ?>"><img src="<?= e(asset('images/logo.svg')) ?>" alt="Peridona Painting Service"></a><p>We transform ordinary spaces into remarkable environments through thoughtful colour, professional workmanship and attention to detail.</p><div class="footer-tagline">Excellence in Every Finish.</div></div>
+    <div class="footer-column"><h3>Explore</h3><a href="<?= e(url('/about')) ?>">About Peridona</a><a href="<?= e(url('/services')) ?>">Our Services</a><a href="<?= e(url('/projects')) ?>">Project Gallery</a><a href="<?= e(url('/process')) ?>">Our Process</a></div>
+    <div class="footer-column"><h3>Get in touch</h3><a href="tel:<?= e(setting('phone_primary','0547320593')) ?>"><?= e(setting('phone_primary','0547320593')) ?></a><a href="tel:<?= e(setting('phone_secondary','0596262939')) ?>"><?= e(setting('phone_secondary','0596262939')) ?></a><?php if(setting('company_email')): ?><a href="mailto:<?= e(setting('company_email')) ?>"><?= e(setting('company_email')) ?></a><?php endif; ?><span><?= e(setting('business_location','Ghana')) ?></span><a href="<?= e(whatsapp_url()) ?>" target="_blank" rel="noopener">Chat on WhatsApp ↗</a></div>
+    <div class="footer-cta"><span class="eyebrow">LET'S TRANSFORM YOUR SPACE</span><h3>Have a project in mind?</h3><p>Tell us what you are planning. Let's talk about the right finish for your space.</p><a class="button button-light" href="<?= e(url('/quote')) ?>">Start a Conversation <span>↗</span></a></div>
+  </div>
+  <div class="footer-bottom"><div class="container footer-bottom-inner"><span>© <?= date('Y') ?> Peridona Painting Service. All rights reserved.</span><span>Designed for a better finish.</span><a href="<?= e(url('/admin/login')) ?>">Administrator</a></div></div>
+</footer>
